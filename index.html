@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radiobiology Plus — Calculadora radiobiológica para radioterapia</title>
+<meta name="description" content="Radiobiology Plus calcula la dosis biológica equivalente (BED) y te ayuda a compensar interrupciones en tratamientos de radioterapia. Disponible en Google Play.">
+<style>
+  :root {
+    --primary: #2c6e91;
+    --primary-dark: #1d4d66;
+    --accent: #e8f4f8;
+    --text: #2b2b2b;
+    --muted: #5f6b73;
+    --bg: #ffffff;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif; color: var(--text); background: var(--bg); line-height: 1.6; }
+  .hero {
+    background: linear-gradient(150deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: #fff;
+    text-align: center;
+    padding: 72px 24px 64px;
+  }
+  .hero img.icon {
+    width: 112px; height: 112px;
+    border-radius: 26px;
+    box-shadow: 0 8px 30px rgba(0,0,0,.35);
+    margin-bottom: 24px;
+  }
+  .hero h1 { font-size: 2.6rem; font-weight: 700; letter-spacing: .01em; }
+  .hero p.tagline {
+    max-width: 620px; margin: 18px auto 30px;
+    font-size: 1.15rem; opacity: .92;
+  }
+  .badge img { height: 64px; }
+  section { max-width: 960px; margin: 0 auto; padding: 56px 24px; }
+  h2 {
+    text-align: center; font-size: 1.7rem;
+    color: var(--primary-dark); margin-bottom: 36px;
+  }
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+  }
+  .feature {
+    background: var(--accent);
+    border-radius: 14px;
+    padding: 26px 22px;
+  }
+  .feature h3 { font-size: 1.05rem; color: var(--primary-dark); margin-bottom: 8px; }
+  .feature p { font-size: .95rem; color: var(--muted); }
+  .strategies { background: #f7fafb; }
+  .strategy {
+    display: flex; gap: 18px; align-items: flex-start;
+    max-width: 720px; margin: 0 auto 26px;
+  }
+  .strategy .num {
+    flex-shrink: 0;
+    width: 44px; height: 44px; border-radius: 50%;
+    background: var(--primary); color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 1.15rem;
+  }
+  .strategy h3 { font-size: 1.05rem; margin-bottom: 4px; }
+  .strategy p { font-size: .95rem; color: var(--muted); }
+  .audience { text-align: center; }
+  .audience ul {
+    list-style: none;
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;
+    margin-top: 8px;
+  }
+  .audience li {
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 10px 22px;
+    font-size: .95rem;
+    color: var(--primary-dark);
+  }
+  .cta {
+    text-align: center;
+    background: linear-gradient(150deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: #fff;
+  }
+  .cta h2 { color: #fff; margin-bottom: 16px; }
+  .cta p { max-width: 560px; margin: 0 auto 28px; opacity: .92; }
+  footer {
+    text-align: center; padding: 28px;
+    font-size: .85rem; color: var(--muted);
+  }
+  footer a { color: var(--primary); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <img class="icon" src="https://play-lh.googleusercontent.com/AvC_bs-Zj7iAGQ6vpN_y5oThkdr2ASFF3_yPc7NFtdQX2fxYkFURnePEdktV5fDX8FijPa49PU5LuAmFz7hS=w224" alt="Icono de Radiobiology Plus">
+  <h1>Radiobiology Plus</h1>
+  <p class="tagline">La herramienta que ayuda a los profesionales de la radioterapia a compensar tratamientos interrumpidos, con cálculo automático de la dosis biológica equivalente (BED).</p>
+  <a class="badge" href="https://play.google.com/store/apps/details?id=com.trendmobgames.radiobiology" target="_blank" rel="noopener">
+    <img src="https://play.google.com/intl/es-419/badges/static/images/badges/es_badge_web_generic.png" alt="Disponible en Google Play">
+  </a>
+</div>
+
+<section>
+  <h2>Funciones principales</h2>
+  <div class="features">
+    <div class="feature">
+      <h3>Cálculo automático de BED</h3>
+      <p>Para el tumor y los órganos a riesgo (OAR), incorporando interrupciones accidentales o programadas del tratamiento.</p>
+    </div>
+    <div class="feature">
+      <h3>Calendario interactivo</h3>
+      <p>Visualiza y modifica el plan de tratamiento: marca días de interrupción o jornadas con doble sesión con colores intuitivos.</p>
+    </div>
+    <div class="feature">
+      <h3>Visualización en tiempo real</h3>
+      <p>Cada cambio se refleja al instante, mostrando cómo afecta a la BED del tumor y de los órganos a riesgo.</p>
+    </div>
+    <div class="feature">
+      <h3>Personalización avanzada</h3>
+      <p>Ajusta el número de fracciones, la dosis por sesión, la fecha de inicio, los valores de alfa/beta y el factor tiempo.</p>
+    </div>
+  </div>
+</section>
+
+<section class="strategies">
+  <h2>Tres estrategias de compensación</h2>
+  <div class="strategy">
+    <div class="num">1</div>
+    <div>
+      <h3>Recuperación mediante dobles sesiones</h3>
+      <p>Recoloca las sesiones perdidas en días puntuales sin extender el tratamiento, cuando las interrupciones son pocas.</p>
+    </div>
+  </div>
+  <div class="strategy">
+    <div class="num">2</div>
+    <div>
+      <h3>Ajuste de dosis sin alargar la duración</h3>
+      <p>Calcula automáticamente una nueva dosis para las sesiones restantes manteniendo la duración total del tratamiento.</p>
+    </div>
+  </div>
+  <div class="strategy">
+    <div class="num">3</div>
+    <div>
+      <h3>Sesiones adicionales al final</h3>
+      <p>Conserva el plan original y añade nuevas sesiones con fraccionamiento modificado para compensar la interrupción.</p>
+    </div>
+  </div>
+</section>
+
+<section class="audience">
+  <h2>¿Para quién es esta app?</h2>
+  <ul>
+    <li>Oncólogos radioterápicos</li>
+    <li>Físicos médicos</li>
+    <li>Radiólogos</li>
+    <li>Residentes y estudiantes</li>
+  </ul>
+</section>
+
+<section class="cta">
+  <h2>Rápida, intuitiva y sin conexión</h2>
+  <p>Convierte un proceso complejo en algo visual, claro y accesible. Útil en el hospital, en sesiones clínicas y como herramienta educativa.</p>
+  <a class="badge" href="https://play.google.com/store/apps/details?id=com.trendmobgames.radiobiology" target="_blank" rel="noopener">
+    <img src="https://play.google.com/intl/es-419/badges/static/images/badges/es_badge_web_generic.png" alt="Disponible en Google Play">
+  </a>
+</section>
+
+<footer>
+  © Alba Díaz Martín · <a href="/">albadiazmartin.com</a>
+</footer>
+
+</body>
+</html>
